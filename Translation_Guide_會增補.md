@@ -21,6 +21,7 @@
 - **Field** ➔ **力場** (用於法術、陷阱、魔法陣等)
 - **locket** ➔ **吊飾盒** (新馬金西亞任務中 Henry/Robin 的金色吊飾盒)
 - **Empath Abbey** ➔ **共情修道院**
+- **Meditation Retreat** ➔ **冥想靜修院**
 - **Shrine of Principle** ➔ **原則神殿**
 - **Shrine of Courage** ➔ **勇氣神殿**
 - **Shrine of Love** ➔ **愛之神殿**

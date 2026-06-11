@@ -47,9 +47,9 @@ labelFunc0480_008A:
 	UI_remove_answer("姓名");
 labelFunc0480_0091:
 	case "職業" attend labelFunc0480_00AA:
-	message("Iriale 露出惡魔般的微笑。~~「我禁止人們進入。你違反了冥想修院 (Meditation Retreat) 的規定。 Ian 會非常不高興。你最好現在就離開。」");
+	message("Iriale 露出惡魔般的微笑。~~「我禁止人們進入。你違反了冥想靜修院 (Meditation Retreat) 的規定。 Ian 會非常不高興。你最好現在就離開。」");
 	say();
-	UI_add_answer(["規定", "冥想修院"]);
+	UI_add_answer(["規定", "冥想靜修院"]);
 labelFunc0480_00AA:
 	case "規定" attend labelFunc0480_00F1:
 	message("「你心知肚明。修院的參加者必須遠離這個洞穴。」");
@@ -70,8 +70,8 @@ labelFunc0480_00F1:
 	say();
 	UI_remove_answer("Gorn");
 labelFunc0480_0104:
-	case "冥想修院" attend labelFunc0480_0143:
-	message("「是的，我為冥想修院工作。~~而且我為『他』工作。『他』不希望你在這裡。我只給你一次轉身離開的機會。」");
+	case "冥想靜修院" attend labelFunc0480_0143:
+	message("「是的，我為冥想靜修院工作。~~而且我為『他』工作。『他』不希望你在這裡。我只給你一次轉身離開的機會。」");
 	say();
 	message("「你要離開嗎？」");
 	say();

@@ -113,27 +113,27 @@ labelFunc041A_0146:
 labelFunc041A_0149:
 	UI_add_answer(["姓名", "職業", "告辭"]);
 	if (!gflags[0x0041]) goto labelFunc041A_0166;
-	UI_add_answer("Elizabeth and Abraham");
+	UI_add_answer("Elizabeth 和 Abraham");
 labelFunc041A_0166:
 	if (!gflags[0x0096]) goto labelFunc041A_017A;
 	if (!(!gflags[0x0006])) goto labelFunc041A_017A;
 	UI_add_answer("加入");
 labelFunc041A_017A:
 	if (!(gflags[0x00D7] || (gflags[0x00D6] && (!gflags[0x0109])))) goto labelFunc041A_0190;
-	UI_add_answer("package");
+	UI_add_answer("包裹");
 labelFunc041A_0190:
 	if (!gflags[0x0109]) goto labelFunc041A_01A4;
-	UI_add_answer("delivered package");
-	UI_remove_answer("package");
+	UI_add_answer("已送達的包裹");
+	UI_remove_answer("包裹");
 labelFunc041A_01A4:
 	if (!gflags[0x0102]) goto labelFunc041A_01B1;
-	UI_add_answer("package delivered");
+	UI_add_answer("包裹已送達");
 labelFunc041A_01B1:
 	if (!gflags[0x011E]) goto labelFunc041A_01BE;
-	UI_add_answer("package delivered");
+	UI_add_answer("包裹已送達");
 labelFunc041A_01BE:
 	if (!gflags[0x008E]) goto labelFunc041A_01DE;
-	UI_remove_answer(["delivered package", "package delivered"]);
+	UI_remove_answer(["已送達的包裹", "包裹已送達"]);
 	if (!gflags[0x0097]) goto labelFunc041A_01DE;
 	UI_add_answer("chest");
 labelFunc041A_01DE:
@@ -148,10 +148,10 @@ labelFunc041A_01FF:
 	UI_add_answer("蘋果");
 labelFunc041A_020C:
 	if (!(gflags[0x008A] || (gflags[0x008C] || gflags[0x000A]))) goto labelFunc041A_0221;
-	UI_add_answer("voice");
+	UI_add_answer("理智的聲音");
 labelFunc041A_0221:
 	if (!gflags[0x008B]) goto labelFunc041A_022E;
-	UI_add_answer("Meditation Retreat");
+	UI_add_answer("冥想靜修院");
 labelFunc041A_022E:
 	if (!(!gflags[0x009B])) goto labelFunc041A_0254;
 	message("你看到一位圓潤的年長紳士，他既謙遜又端莊。他溫和的眼神流露出對同胞的關懷。");
@@ -195,15 +195,15 @@ labelFunc041A_029A:
 	UI_add_answer("精神上的");
 labelFunc041A_02B4:
 	case "精神上的" attend labelFunc041A_02D4:
-	message("「友誼會推廣『自信認知（sanguine cognition）』的理念，這是一種透過所謂的『內在力量三原則（Triad of Inner Strength）』，將積極的思維秩序應用於個人生活的方式。」");
+	message("「友誼會推廣『自信認知（sanguine cognition）』的理念，這是一種透過所謂的『內在力量三位一體（Triad of Inner Strength）』，將積極的思維秩序應用於個人生活的方式。」");
 	say();
 	UI_remove_answer("精神上的");
-	UI_add_answer(["樂觀認知", "三原則"]);
+	UI_add_answer(["自信認知", "三位一體"]);
 labelFunc041A_02D4:
-	case "樂觀認知" attend labelFunc041A_02EE:
+	case "自信認知" attend labelFunc041A_02EE:
 	message("「我們努力避免自古以來神秘主義者和賢哲所犯的錯誤。他們將過去的標準（例如美德）應用於衡量現在，因此他們無法正確地感知現在。我們尋求以我們自己的方式來審視我們現在的生活，並看清世界本來的面目。」");
 	say();
-	UI_remove_answer("樂觀認知");
+	UI_remove_answer("自信認知");
 	UI_add_answer("美德");
 labelFunc041A_02EE:
 	case "美德" attend labelFunc041A_0301:
@@ -211,34 +211,34 @@ labelFunc041A_02EE:
 	say();
 	UI_remove_answer("美德");
 labelFunc041A_0301:
-	case "三原則" attend labelFunc041A_031B:
-	message("「『內在力量三原則』簡單來說就是三個基本的價值觀，當它們被統一起來應用時，就能使一個人在生活中更具創造力、更滿足、更成功。」");
+	case "三位一體" attend labelFunc041A_031B:
+	message("「『內在力量三位一體（Triad of Inner Strength）』簡單來說就是三個基本的價值觀，當它們被統一起來應用時，就能使一個人在生活中更具創造力、更滿足、更成功。」");
 	say();
-	UI_remove_answer("三原則");
+	UI_remove_answer("三位一體");
 	UI_add_answer("價值觀");
 labelFunc041A_031B:
 	case "價值觀" attend labelFunc041A_033E:
-	message("「內在力量三原則的三個價值觀是：『追求團結（Strive For Unity）』、『信任弟兄（Trust Thy Brother）』和『價值先於回報（Worthiness Precedes Reward）』。」");
+	message("「內在力量三原則的三個價值觀是：『致力合一（Strive For Unity）』、『信賴你的兄弟 (Trust Thy Brother)』和『價值先行於報償 (Worthiness Precedes Reward)』。」");
 	say();
 	UI_remove_answer("價值觀");
-	UI_add_answer(["團結", "信任", "價值"]);
+	UI_add_answer(["致力合一", "信賴你的兄弟", "價值先行於報償"]);
 labelFunc041A_033E:
-	case "團結" attend labelFunc041A_0358:
-	message("「當我們說『追求團結』時，這只是我們表達 Britannia 人民應該如何合作與共同努力的方式。這是一種非常有價值的觀念，我相信你也會同意。」");
+	case "致力合一" attend labelFunc041A_0358:
+	message("「當我們說『致力合一』時，這只是我們表達 Britannia 人民應該如何合作與共同努力的方式。這是一種非常有價值的觀念，我相信你也會同意。」");
 	say();
-	UI_remove_answer("團結");
+	UI_remove_answer("致力合一");
 	UI_add_answer("加入");
 labelFunc041A_0358:
-	case "信任" attend labelFunc041A_0372:
+	case "信賴你的兄弟" attend labelFunc041A_0372:
 	message("「友誼會的意思是，人人都是一樣的，而世界大體上是一個支持與孕育生命的地方。我們對彼此的信任就像是將我們社會維繫在一起的樞紐。相當真實，難道你不同意嗎？」");
 	say();
-	UI_remove_answer("信任");
+	UI_remove_answer("信賴你的兄弟");
 	UI_add_answer("加入");
 labelFunc041A_0372:
-	case "價值" attend labelFunc041A_038C:
-	message("「請允許我解釋『價值先於回報』的含義。我們每個人都在尋求我們在生活中所渴望的東西，而我們必須努力讓自己配得上我們所追求的東西。我很確定你很難反對這一點。」");
+	case "價值先行於報償" attend labelFunc041A_038C:
+	message("「請允許我解釋『價值先行於報償』的含義。我們每個人都在尋求我們在生活中所渴望的東西，而我們必須努力讓自己配得上我們所追求的東西。我很確定你很難反對這一點。」");
 	say();
-	UI_remove_answer("價值");
+	UI_remove_answer("價值先行於報償");
 	UI_add_answer("加入");
 labelFunc041A_038C:
 	case "Elizabeth and Abraham" attend labelFunc041A_03E5:
@@ -281,7 +281,7 @@ labelFunc041A_040C:
 labelFunc041A_040F:
 	UI_remove_answer("加入");
 labelFunc041A_0416:
-	case "package" attend labelFunc041A_0478:
+	case "包裹" attend labelFunc041A_0478:
 	if (!(gflags[0x00D7] && (!gflags[0x008F]))) goto labelFunc041A_0475;
 	message("「啊！我真希望你的雙手沒有滿到拿不下這個包裹。」");
 	say();
@@ -302,13 +302,13 @@ labelFunc041A_0463:
 labelFunc041A_0475:
 	Func0851();
 labelFunc041A_0478:
-	case "delivered package" attend labelFunc041A_0492:
+	case "已送達的包裹" attend labelFunc041A_0492:
 	message("「恭喜，聖者，我們感謝你成功地將我們的包裹送交給 Minoc 的 Elynor 。現在，在你加入友誼會之前，我們還有另一個任務要處理。因為你送達了包裹，你已經證明自己有資格執行另一個任務。」");
 	say();
-	UI_remove_answer("delivered package");
+	UI_remove_answer("已送達的包裹");
 	UI_add_answer("任務");
 labelFunc041A_0492:
-	case "package delivered" attend labelFunc041A_0512:
+	case "包裹已送達" attend labelFunc041A_0512:
 	message("「聖者，你有把包裹送交給 Minoc 的 Elynor 嗎？」");
 	say();
 	var000B = Func090A();
@@ -349,7 +349,7 @@ labelFunc041A_0506:
 	say();
 	abort;
 labelFunc041A_050B:
-	UI_remove_answer("package delivered");
+	UI_remove_answer("包裹已送達");
 labelFunc041A_0512:
 	case "任務" attend labelFunc041A_0530:
 	message("「你將前往 Destard 地城，它位於 Trinsic 以西的群山中。別擔心，那裡已經完全廢棄了。在那裡，你會找到一個裝有友誼會資金的箱子，這是幾天前為了安全起見藏起來的。你會認出這個箱子，因為它不僅裝有黃金，還有兩枚友誼會徽章。那個地點也很可能標有友誼會的法杖。將這些資金帶回給我們，不要遺失任何一枚硬幣，你將成功完成你的任務。不需要帶回箱子，只要帶回黃金。現在，你必須上路了！」*");
@@ -407,9 +407,9 @@ labelFunc041A_0605:
 	say();
 	UI_remove_answer("蘋果");
 labelFunc041A_0618:
-	case "voice" attend labelFunc041A_0645:
+	case "理智的聲音" attend labelFunc041A_0645:
 	if (!gflags[0x0096]) goto labelFunc041A_0633;
-	message("「一旦一個人與友誼會同行夠久，並將『內在力量三原則』應用於他的生活，他就能清除腦海中所有衝突、適得其反的念頭，達到他能實際聽到他內在理智聲音的地步。這個理智的聲音是你內心的核心，透過純粹的本能、智慧和無懈可擊的邏輯引導著你。一旦有人開始聆聽它並遵循它的指引，他就達到了啟蒙的最高境界。也許有一天你也會聽到它。」");
+	message("「一旦一個人與友誼會同行夠久，並將『內在力量三位一體（Triad of Inner Strength）』應用於他的生活，他就能清除腦海中所有衝突、適得其反的念頭，達到他能實際聽到他內在理智聲音的地步。這個理智的聲音是你內心的核心，透過純粹的本能、智慧和無懈可擊的邏輯引導著你。一旦有人開始聆聽它並遵循它的指引，他就達到了啟蒙的最高境界。也許有一天你也會聽到它。」");
 	say();
 	Func0911(0x0014);
 	goto labelFunc041A_063E;
@@ -418,7 +418,7 @@ labelFunc041A_0633:
 	say();
 	UI_add_answer("測試");
 labelFunc041A_063E:
-	UI_remove_answer("voice");
+	UI_remove_answer("理智的聲音");
 labelFunc041A_0645:
 	case "測試" attend labelFunc041A_066F:
 	message("「喔，你準備好加入友誼會了嗎？」");
@@ -433,10 +433,10 @@ labelFunc041A_065D:
 labelFunc041A_0668:
 	UI_remove_answer("測試");
 labelFunc041A_066F:
-	case "Meditation Retreat" attend labelFunc041A_0682:
+	case "冥想靜修院" attend labelFunc041A_0682:
 	message("「那是一個遠離日常生活壓力和干擾的靜修之處，友誼會的新成員可以去那裡學習友誼會的理念。它位於 Serpent's Hold 東方的一個島上。」");
 	say();
-	UI_remove_answer("Meditation Retreat");
+	UI_remove_answer("冥想靜修院");
 labelFunc041A_0682:
 	case "告辭" attend labelFunc041A_068D:
 	goto labelFunc041A_0690;
